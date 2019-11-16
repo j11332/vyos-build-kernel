@@ -106,7 +106,7 @@ pipeline {
                                 doGenerateSubmoduleConfigurations: false,
                                 extensions: [[$class: 'CleanCheckout']],
                                 branches: [[name: 'v4.19.84' ]],
-                                userRemoteConfigs: [[url: 'https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git']]])
+                                userRemoteConfigs: [[url: 'https://github.com/torvalds/linux.git']]])
                         }
                     }
                 }
