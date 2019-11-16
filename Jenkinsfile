@@ -83,7 +83,7 @@ setDescription()
 pipeline {
     agent {
         docker {
-            args '--sysctl net.ipv6.conf.lo.disable_ipv6=0 -e GOSU_UID=1006 -e GOSU_GID=1006'
+            args '--sysctl net.ipv6.conf.lo.disable_ipv6=0 -e GOSU_UID=1000 -e GOSU_GID=1000'
             image 'vyos/vyos-build:current'
             alwaysPull true
         }
